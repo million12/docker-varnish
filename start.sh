@@ -1,3 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-varnishd -u varnish -a 0.0.0.0:$PORT -b $BACKEND_IP:$BACKEND_PORT -F
+set -e
+
+varnishd -F -u varnish \
+  -f $VCL_CONFIG \
+  -s malloc,$CACHE_SIZE \
+  $VARNISHD_PARAMS
