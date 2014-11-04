@@ -34,3 +34,13 @@ You can configure Varnish daemon by following env variables:
 > **VCL_CONFIG** `/etc/varnish/default.vcl`  
 > **CACHE_SIZE** `64m`  
 > **VARNISHD_PARAMS** `-p default_ttl=3600 -p default_grace=3600`
+
+
+## Author(s)
+
+* Marcin Ryzycki (<marcin@m12.io>)  
+* Przemyslaw Ozgo (<linux@ozgo.info>)
+
+---
+
+**Sponsored by** [Typostrap.io - the new prototyping tool](http://typostrap.io/) for building highly-interactive prototypes of your website or web app. Built on top of TYPO3 Neos CMS and Zurb Foundation framework.
