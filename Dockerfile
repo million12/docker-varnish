@@ -4,6 +4,7 @@ MAINTAINER Przemyslaw Ozgo linux@ozgo.info, Marcin Ryzycki marcin@m12.io
 RUN yum update -y && \
   yum install -y epel-release && \
   yum install -y varnish && \
+  yum install -y libmhash-devel && \
   yum clean all
 
 ADD start.sh /start.sh
